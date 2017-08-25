@@ -45,7 +45,7 @@ body{
   z-index: 1;
   display:-moz-inline-box;
   display:inline-block;
-  margin-top: 70vh;
+  margin-top: calc(100vh - 172px);
   vertical-align:middle;
   text-align: left;
   zoom:1;
@@ -93,6 +93,9 @@ body{
     }
 }
 @media screen and (min-width: 375px) {
+  .info{
+    margin-top: calc(100vh - 200px);
+  }
   .cell img {
     height: 150px;
   }
@@ -106,6 +109,9 @@ body{
   }
 }
 @media screen and (min-width: 414px) {
+  .info {
+    margin-top: calc(100vh - 228px);
+  }
   .cell div img {
     height: 50px;
     width: 50px;
@@ -124,6 +130,9 @@ body{
   }
 }
 @media screen and (min-width: 768px) {
+  .info {
+    margin-top: calc(100vh - 354px);
+  }
   .cell img {
     margin-right: 35px;
     height: 247px;
@@ -143,6 +152,9 @@ body{
   }
 }
 @media screen and (min-width: 1024px) {
+  .info {
+    margin-top: calc(100vh - 446px);
+  }
   .cell img {
     margin-right: 40px;
     height: 328px;
