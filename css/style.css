@@ -1,6 +1,11 @@
 *{
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+}
+body, html{
+  height: 100%;
+  width: 100%;
+  text-align:center;
 }
 body{
   background-image: url(../img/background.jpg);
@@ -8,7 +13,7 @@ body{
   -webkit-background-size: 115%;
   -o-background-size: 115%;
   background-size: 115%;
-  display: grid;
+  text-align: center;
 }
 .background{
   position: absolute;
@@ -37,10 +42,25 @@ body{
   margin-top: 10px;
 }
 .info{
-  padding-top: calc(100vh - 155px);
-  display: inline-block;
   z-index: 1;
-  margin: 0 auto;
+  display:-moz-inline-box;
+  display:inline-block;
+  margin-top: 70vh;
+  vertical-align:middle;
+  text-align: left;
+  zoom:1;
+  //display:inline;
+  position: relative;
+  padding: 5px;
+}
+.helper {
+  display:-moz-inline-box;
+  display:inline-block;
+  height:100%;
+  width:0px;
+  vertical-align:middle;
+  zoom:1;
+  //display:inline;
 }
 .cell img {
   margin-right: 5px;
@@ -73,9 +93,6 @@ body{
     }
 }
 @media screen and (min-width: 375px) {
-  .info {
-    padding-top: calc(100vh - 185px);
-  }
   .cell img {
     height: 150px;
   }
@@ -89,9 +106,6 @@ body{
   }
 }
 @media screen and (min-width: 414px) {
-  .info {
-    padding-top: calc(100vh - 200px);
-  }
   .cell div img {
     height: 50px;
     width: 50px;
@@ -110,9 +124,6 @@ body{
   }
 }
 @media screen and (min-width: 768px) {
-  .info {
-    padding-top: calc(100vh - 310px);
-  }
   .cell img {
     margin-right: 35px;
     height: 247px;
@@ -132,9 +143,6 @@ body{
   }
 }
 @media screen and (min-width: 1024px) {
-  .info {
-    padding-top: calc(100vh - 400px);
-  }
   .cell img {
     margin-right: 40px;
     height: 328px;
